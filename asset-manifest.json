@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hansamin/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/hansamin/static/js/main.bb53ed94.chunk.js",
+    "main.js.map": "/hansamin/static/js/main.bb53ed94.chunk.js.map",
+    "runtime-main.js": "/hansamin/static/js/runtime-main.8876f3e9.js",
+    "runtime-main.js.map": "/hansamin/static/js/runtime-main.8876f3e9.js.map",
+    "static/js/2.dcd56722.chunk.js": "/hansamin/static/js/2.dcd56722.chunk.js",
+    "static/js/2.dcd56722.chunk.js.map": "/hansamin/static/js/2.dcd56722.chunk.js.map",
+    "static/js/3.b85e8529.chunk.js": "/hansamin/static/js/3.b85e8529.chunk.js",
+    "static/js/3.b85e8529.chunk.js.map": "/hansamin/static/js/3.b85e8529.chunk.js.map",
+    "index.html": "/hansamin/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/hansamin/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.dcd56722.chunk.js.LICENSE.txt": "/hansamin/static/js/2.dcd56722.chunk.js.LICENSE.txt",
+    "static/media/event_20210501.87e96450.png": "/hansamin/static/media/event_20210501.87e96450.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8876f3e9.js",
+    "static/js/2.dcd56722.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.bb53ed94.chunk.js"
+  ]
+}
