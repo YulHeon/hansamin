@@ -1,5 +1,5 @@
 import React from "react";
-import eventImage from "./images/event_20210501.png";
+import eventImage from "./images/event_20210829.jpg";
 import "./App.css";
 
 function App() {
