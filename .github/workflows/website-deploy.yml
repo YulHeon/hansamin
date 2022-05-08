@@ -27,16 +27,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - name: init git config
-      run: |
-        git config --global user.email “smgr8178@naver.com”
-        git config --global user.name “yulheon”
+    - run: npm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.DEPLOY_KEY }}
+        publish_dir: ./dist
     - name: make deploy keys
-      env:
-        GH_ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-    - run: npm run deploy
