@@ -30,7 +30,7 @@ jobs:
     - name: init git config
       run: |
         git config --global user.email “smgr8178@naver.com”
-        git config --global user.name “YulHeon”
+        git config --global user.name “yulheon”
     - name: make deploy keys
       env:
         GH_ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
