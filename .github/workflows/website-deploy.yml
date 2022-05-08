@@ -31,4 +31,12 @@ jobs:
       run: |
         git config --global user.email “smgr8178@naver.com”
         git config --global user.name “YulHeon”
+    - name: make deploy keys
+      env:
+        GH_ACTION_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
     - run: npm run deploy
